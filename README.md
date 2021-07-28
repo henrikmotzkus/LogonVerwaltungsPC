@@ -5,16 +5,18 @@ Dieses PowerShell Modul starten eine VM in Azure. (z. B.: einen zentralen PC mit
 
 # Requirements
 Auf dem PC muss das aktuelle Az Powershell Modul installiert sein.
+
 https://docs.microsoft.com/de-de/powershell/azure/new-azureps-module-az?view=azps-6.2.1
 
-Installationanleitung: https://docs.microsoft.com/de-de/powershell/azure/install-az-ps?view=azps-6.2.1
+Installationanleitung:
+https://docs.microsoft.com/de-de/powershell/azure/install-az-ps?view=azps-6.2.1
 
 # Benutzung
 
 Bsp 1:
 
 ```
-Import-Module Logon-VerwwaltungsPC
+Import-Module Logon-VerwaltungsPC
 Logon-VerwaltungsPC -rg "Verwaltung" -name "Verwaltungs-PC" -pubname "verwaltungspc.germanywestcentral.cloudapp.azure.com"
 ``` 
 
@@ -26,6 +28,11 @@ pubname = Der DNS Name der VM, der öffentlich erreichtbar sein muss.
 
 Sollte die VM nicht über das Internet erreichbar sein, dann kann auch ein Weg über VPN aufgebaut werden.
 
+Sobald die RDP Session erstmalig startet, kann man die Credentials auf dem PC speichern. Dann muss man sie später nicht immer eingeben. Das Script fragt also nur noch einmal nach den Zugangsdaten. 
+
 # Zusätzliche Infos
 
 Das RDP Protokoll ist mit ähnlich starken Technologien verschlüsselt wie auch VPN Tunnel. Auf die Nutzung von VPN würde ich also aktuell verzichten. Macht das Szenario also nochmal einfacher. 
+
+
+Happy coding...
