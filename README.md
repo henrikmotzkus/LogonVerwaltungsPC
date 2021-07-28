@@ -13,7 +13,10 @@ Installationanleitung: https://docs.microsoft.com/de-de/powershell/azure/install
 
 Bsp 1:
 
+````
+Import-Module Logon-VerwwaltungsPC
 Logon-VerwaltungsPC -rg "Verwaltung" -name "Verwaltungs-PC" -pubname "verwaltungspc.germanywestcentral.cloudapp.azure.com"
+``` 
 
 Wobei die Parameter folgende Wirkung haben
 
