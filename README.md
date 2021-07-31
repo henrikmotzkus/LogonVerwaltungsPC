@@ -13,7 +13,7 @@ https://docs.microsoft.com/de-de/powershell/azure/install-az-ps?view=azps-6.2.1
 
 Der Benutzer, der sich mit der VM in Azure verbinden will, benötigt die folgenden Berechtigungen.
 
-´´´
+```
 {
   "Name": "Virtual Machine Starter-Stopper",
   "IsCustom": true,
@@ -33,7 +33,7 @@ Der Benutzer, der sich mit der VM in Azure verbinden will, benötigt die folgend
     "/subscriptions/00000000-1234-5678-91234-000000000000"
   ]
 }
-´´´
+```
 
 # Benutzung
 
