@@ -11,6 +11,30 @@ https://docs.microsoft.com/de-de/powershell/azure/new-azureps-module-az?view=azp
 Installationanleitung:
 https://docs.microsoft.com/de-de/powershell/azure/install-az-ps?view=azps-6.2.1
 
+Der Benutzer, der sich mit der VM in Azure verbinden will, benötigt die folgenden Berechtigungen.
+
+´´´
+{
+  "Name": "Virtual Machine Starter-Stopper",
+  "IsCustom": true,
+  "Description": "Lets you see, start, restart and stop Virtual Machines.",
+  "Actions": [
+	"Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Compute/virtualMachines/read",
+	"Microsoft.Compute/virtualMachines/start/action",
+	"Microsoft.Compute/virtualMachines/restart/action",
+	"Microsoft.Compute/virtualMachines/powerOff/action",
+	"Microsoft.Compute/virtualMachines/deallocate/action"
+  ],
+  "NotActions": [],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/subscriptions/00000000-1234-5678-91234-000000000000"
+  ]
+}
+´´´
+
 # Benutzung
 
 Bsp 1:
